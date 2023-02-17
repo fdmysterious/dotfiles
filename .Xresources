@@ -1,0 +1,95 @@
+XTerm.termName: xterm-256color
+XTerm.vt100.locale: false
+XTerm.vt100.utf8: true
+XTerm.vt100.metaSendsEscape: true
+XTerm.vt100.saveLines: 8192
+XTerm.vt100.scrollBar: false
+
+XTerm*selectToClipboard: true
+
+XTerm*faceName: Source Code Pro
+XTerm*faceSize: 10
+
+XTerm*vt100.Translations: #override \
+	Ctrl Shift <Key>V: insert-selection(CLIPBOARD) \n\
+	Ctrl Shift <Key>C: copy-selection(CLIPBOARD)
+
+XTerm*renderFont: true
+
+
+! Solarized dark from terminal.sexy
+!! special
+!*.foreground:   #93a1a1
+!*.background:   #002b36
+!*.cursorColor:  #93a1a1
+!
+!! black
+!*.color0:       #002b36
+!*.color8:       #657b83
+!
+!! red
+!*.color1:       #dc322f
+!*.color9:       #dc322f
+!
+!! green
+!*.color2:       #859900
+!*.color10:      #859900
+!
+!! yellow
+!*.color3:       #b58900
+!*.color11:      #b58900
+!
+!! blue
+!*.color4:       #268bd2
+!*.color12:      #268bd2
+!
+!! magenta
+!*.color5:       #6c71c4
+!*.color13:      #6c71c4
+!
+!! cyan
+!*.color6:       #2aa198
+!*.color14:      #2aa198
+!
+!! white
+!*.color7:       #93a1a1
+!*.color15:      #fdf6e3
+
+
+! Custom theme
+! special
+*.foreground:   #faf9ff
+*.background:   #111014
+*.cursorColor:  #faf9ff
+
+! black
+*.color0:       #000000
+*.color8:       #202020
+
+! red
+*.color1:       #b03243
+*.color9:       #b13434
+
+! green
+*.color2:       #e8ff00
+*.color10:      #b3d33f
+
+! yellow
+*.color3:       #e17e27
+*.color11:      #ffc700
+
+! blue
+*.color4:       #5599ff
+*.color12:      #2ca9ff
+
+! magenta
+*.color5:       #af0071
+*.color13:      #565299
+
+! cyan
+*.color6:       #0da2cd
+*.color14:      #14b6ff
+
+! white
+*.color7:       #606060
+*.color15:      #ffffff

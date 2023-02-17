@@ -1,0 +1,3 @@
+text="$1"
+[ -z "$text" ] && text="Alarm !"
+notify-send -u critical -t 600000 "$text" "$(date)"

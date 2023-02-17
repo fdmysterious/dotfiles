@@ -1,0 +1,41 @@
+at_now=""       # Corresponds to # now + if the mode is "in"
+prompt="Prompt" # Prompt text
+resp="Response" # Confirmation text
+prompt_content=""
+
+# Get mode
+case "$1" in
+	in) at_now="now +"
+	    prompt="Set alarm in: "
+	    resp="Alarm set in" ;;
+	
+	on) at_now=""
+	    prompt="Set alarm on: "
+	    resp="Alarm set on"
+        prompt_content=`date +%H:%m`  # prefilled content for prompt
+    ;;
+
+	*) echo "Uknown mode $1"
+	   exit 1 ;;
+esac
+
+# Ask hour
+deltaT=$(echo "$prompt_content" | dmenu -p "$prompt")
+[ -z $deltaT ] && exit 1
+
+txt=$(echo "Alarm !" | dmenu -p "Text: ")
+[ -z $txt ] && exit 1
+
+# Check prompt content
+
+# Get DBUS environ. variables
+source $HOME/.dbus/session-bus/$(cat /etc/machine-id)-${DISPLAY##:}
+export DBUS_SESSION_BUS_ADDRESS DBUS_SESSION_BUS_PID DBUS_SESSION_BUS_WINDOWID
+
+# Configure alarm
+at -u $USER $at_now $deltaT <<!
+$HOME/.config/desktop/alarm/fire $txt
+!
+
+# Final notification
+notify-send "Alarm set" "$resp $deltaT"

@@ -1,0 +1,1 @@
+for i in $(seq 3) ; do paplay -p "$HOME/.config/desktop/alarm/sound.wav" ; done

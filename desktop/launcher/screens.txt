@@ -1,0 +1,3 @@
+a:aoc:bash -c "$HOME/.config/desktop/screens/aoc.sh"
+al:aoc landscape:bash -c "$HOME/.config/desktop/screens/aoc_landscape.sh"
+d:duplicate:bash -c "$HOME/.config/desktop/screens/duplicate.sh"

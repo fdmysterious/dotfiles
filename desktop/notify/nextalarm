@@ -1,0 +1,4 @@
+#!/bin/ash
+time_left=$(systemctl --user list-timers | sed -n '2p' | cut -d ' ' -f 5)
+notify-send -u normal "Time until next alarm" "$time_left"
+

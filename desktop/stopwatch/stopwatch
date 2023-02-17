@@ -1,0 +1,15 @@
+read tstart < ~/.stopwatch
+if [ $? -ne 0 ] ; then
+    echo "No stopwatch started"
+    exit 1
+fi
+
+tstop=$(date +'%s')
+
+delta_T=$((tstop - tstart))
+
+delta_h=$((delta_T / 3600))
+delta_m=$(( (delta_T / 60) % 60 ))
+delta_s=$(( delta_T % 60 ))
+
+echo "${delta_h}h ${delta_m}m ${delta_s}s"

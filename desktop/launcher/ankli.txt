@@ -1,0 +1,2 @@
+a:Add basic card:${ANKLI_DIR}/desktop/add_basic_card
+d:Set deck:${ANKLI_DIR}/desktop/set_deck

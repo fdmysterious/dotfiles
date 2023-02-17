@@ -1,0 +1,1 @@
+$HOME/.config/desktop/stopwatch/stopwatch | xargs -0 notify-send -u normal "Stopped watch"

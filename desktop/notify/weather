@@ -1,0 +1,5 @@
+#!/bin/ash
+
+IFS=";" read icon desc temp < <($HOME/.config/desktop/weathertool/show.sh)
+
+notify-send -i "$HOME/.config/desktop/weathertool/icons/${icon}.png" "$desc" "Température : $temp"

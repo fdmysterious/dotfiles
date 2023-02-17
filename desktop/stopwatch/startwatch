@@ -1,0 +1,2 @@
+tstart=$(date +"%s")
+echo $tstart > ~/.stopwatch

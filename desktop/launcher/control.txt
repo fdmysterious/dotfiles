@@ -1,0 +1,2 @@
+p:Power OFF:sudo poweroff
+r:Reboot:sudo reboot

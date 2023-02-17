@@ -1,0 +1,2 @@
+$HOME/.config/desktop/alarm/showalarm "$1" &
+$HOME/.config/desktop/alarm/playsound

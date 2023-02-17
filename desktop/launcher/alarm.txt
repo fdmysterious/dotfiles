@@ -1,0 +1,4 @@
+i:In time:$HOME/.config/desktop/alarm/ctrl/alarm_set in
+o:On time:$HOME/.config/desktop/alarm/ctrl/alarm_set on
+s:Start Watch:$HOME/.config/desktop/notify/startwatch
+q:Stop Watch:$HOME/.config/desktop/notify/stopwatch

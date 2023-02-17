@@ -1,0 +1,5 @@
+f:Firefox:firefox
+o:Calendar:korganizer
+i:Inkscape:inkscape
+m:Mail:claws-mail
+p:Volume control:pavucontrol

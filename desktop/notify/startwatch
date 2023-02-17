@@ -1,0 +1,1 @@
+$HOME/.config/desktop/stopwatch/startwatch && notify-send "Started Watch"
